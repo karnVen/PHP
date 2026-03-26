@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +6,26 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="index.php" method="post">
 
-<form action="index.php" method="post">
-    <Label>username: </Label><br>
-    <input type="text" name="username"><br>
-    <Label>passwrod: </Label><br>
-    <input type="text" name="password"><br>
-    <input type="submit" value="log in">
-
+    <label for="">quantity: </label><br>
+    <input type="text" name="quantity">
+    <input type="submit" value="total">
     </form>
-
-    <?php 
-    //action in form send data to that file thast listed in it 
-   // echo $_GET["username"];
-    //echo $_GET["password"];
-
-    echo "{$_POST["username"]}";//hids data 
-    echo "{$_POST["password"]}";
-
-
-
-    ?>
-
 </body>
 </html>
+
+<?php 
+
+$item="pizza";
+$price = 5.99;
+$quantity = $_POST["quantity"];
+$total = null;
+$total = $quantity * $price;
+
+echo "you ordered {$quantity} x {$item}s ";
+echo "your totale is : {$total}";
+
+
+//using get you can change variables values in url
+?>
