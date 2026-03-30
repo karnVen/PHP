@@ -27,7 +27,7 @@ if(isset($_POST["login"])){
 
     $age = filter_input(INPUT_POST,"age",FILTER_SANITIZE_NUMBER_INT);
 
-    //
+    //php is flexi
     echo $username;
     echo $age;
 }
