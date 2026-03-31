@@ -1,24 +1,6 @@
 <?php
 
-$business=[
-    'name' => 'laracasts',
-    'cost' => 15,
-    "cate"=> ["Testiing","PHP","JavaScript"]
-];
 
-foreach($business ['cate'] as $category){
-
-echo $category;
-}
-
-
-function register ($user){
-    //create the user record in the db 
-    //log them in 
-    //send a welcom email
-    //redirect to their new dashboard
-}
 
 require "index.view.php";
 
-?>
