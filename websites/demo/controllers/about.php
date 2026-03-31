@@ -1,6 +1,6 @@
 <?php
 
-
+//require 'function.php';
 $name = "ABOUT";
 
 //ECHO $_SERVER['REQUEST_URI'];

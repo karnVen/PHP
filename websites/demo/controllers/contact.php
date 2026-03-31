@@ -1,5 +1,6 @@
 <?php
 
+//require 'function.php';
 $name = "CONTACT";
 
 

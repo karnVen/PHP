@@ -1,23 +1,20 @@
-<?php
 
+<?php 
 
-$name = "Home";
-
-function dd($value){
-
-echo "<pre>";
-var_dump($value);
-echo "</pre>";
-
-die();
-}
-
+require 'function.php';
 //dd($_SERVER);
 
-//ECHO $_SERVER['REQUEST_URI'];
+$uri =$_SERVER['REQUEST_URI'];
 
-//echo $_SERVER['REQUEST_URL']==='/PHP/websites/demo/' ? 'be-grey-900 text-white': 'text-grey-300';
-require "view/index.view.php";
+if($uri === '/PHP/websites/demo/'){
 
+require 'controllers/index.php';
+} elseif($uri === '/PHP/websites/demo/about'){
+
+require 'controllers/about.php';
+}elseif($uri === '/PHP/websites/demo/contact'){
+
+require 'controllers/contact.php';
+}
 
 
