@@ -3,10 +3,10 @@
 $business=[
     'name' => 'laracasts',
     'cost' => 15,
-    "cate"=> ["Testiing","PHP","JavaScript"]
+    "categories"=> ["Testiing","PHP","JavaScript"]
 ];
 
-foreach($business ['cate'] as $category){
+foreach($business ['categories'] as $category){
 
 echo $category;
 }
