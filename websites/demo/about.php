@@ -1,6 +1,7 @@
 <?php
 
 
+$name = "ABOUT";
 
-require "about.view.php";
+require "view/about.view.php";
 
